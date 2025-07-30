@@ -1,5 +1,7 @@
 # LiDAR Constellation Sensor Tasking Framework
 
+Note: some of the code in this repository was created with the assistance of AI, including Gemini 2.5 Pro by Google and Cursor AI. The AI written portions of the code were checked and debugged by me, and the rest of the code was written by me.
+
 A complete Python-based simulation and training framework for autonomous LiDAR constellation sensor tasking systems. This project implements a reinforcement learning approach using Graph Neural Networks (GNNs) and Proximal Policy Optimization (PPO) to optimize sensor pointing decisions for space debris tracking.
 
 ## 🚀 Features
