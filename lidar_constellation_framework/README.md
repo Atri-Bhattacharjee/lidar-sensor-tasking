@@ -156,7 +156,7 @@ This will verify that:
    # ... evaluation code
    ```
 
-## 🔧 Configuration
+## Configuration
 
 All hyperparameters and settings are centralized in `simulation/config.py`:
 
@@ -182,7 +182,7 @@ All hyperparameters and settings are centralized in `simulation/config.py`:
 - **Edges**: k-Nearest Neighbors based on 3D spatial proximity
 - **Features**: [6D state + 6D covariance diagonal + 1D existence probability]
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 The framework uses the **OSPA (Optimal Subpattern Assignment)** distance metric to evaluate tracking performance:
 
@@ -190,7 +190,7 @@ The framework uses the **OSPA (Optimal Subpattern Assignment)** distance metric 
 - **Cardinality Error**: Penalty for missed detections and false alarms
 - **Combined Score**: Weighted combination of localization and cardinality errors
 
-## 🔬 Key Components
+## Key Components
 
 ### LMB Filter
 - **Gaussian Mixture Models**: Represents state uncertainty
@@ -209,7 +209,7 @@ The framework uses the **OSPA (Optimal Subpattern Assignment)** distance metric 
 - **Experience Replay**: Stores and reuses trajectories
 - **Gradient Clipping**: Stabilizes training
 
-## 🚀 Advanced Usage
+## Advanced Usage
 
 ### Custom Ground Truth Data
 Replace the simplified ground truth generation in `constellation_env.py` with your own data loader:
@@ -238,7 +238,7 @@ def _calculate_reward(self, ground_truth, estimated_state):
     pass
 ```
 
-## 📈 Training Tips
+## Training Tips
 
 1. **Start Small**: Begin with fewer satellites and objects for faster iteration
 2. **Monitor OSPA**: Focus on minimizing OSPA distance rather than just episode reward
@@ -278,9 +278,6 @@ VERBOSE = True
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
