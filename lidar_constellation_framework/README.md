@@ -4,7 +4,7 @@ Note: some of the code in this repository was created with the assistance of AI,
 
 A complete Python-based simulation and training framework for autonomous LiDAR constellation sensor tasking systems. This project implements a reinforcement learning approach using Graph Neural Networks (GNNs) and Proximal Policy Optimization (PPO) to optimize sensor pointing decisions for space debris tracking.
 
-## 🚀 Features
+## Features
 
 - **Modular Architecture**: Clean separation of concerns with dedicated modules for data generation, simulation, and training
 - **State-of-the-Art Tracking**: Labeled Multi-Bernoulli (LMB) filter for robust multi-object tracking
@@ -13,7 +13,7 @@ A complete Python-based simulation and training framework for autonomous LiDAR c
 - **Performance Evaluation**: OSPA (Optimal Subpattern Assignment) distance metric for tracking performance assessment
 - **Comprehensive Simulation**: Realistic sensor noise, detection probability, and clutter modeling
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 lidar_constellation_framework/
@@ -53,7 +53,7 @@ lidar_constellation_framework/
 └── README.md                # This file
 ```
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository**:
    ```bash
@@ -81,7 +81,7 @@ lidar_constellation_framework/
    pip install torch-geometric
    ```
 
-## 📊 Data Preprocessing
+## Data Preprocessing
 
 The framework includes a comprehensive data preprocessing pipeline for handling CPE (Conjunction Prediction Event) files:
 
@@ -113,7 +113,7 @@ This will verify that:
 - Orbit propagation works as expected
 - The environment can load the ground truth database
 
-## 🎯 Quick Start
+## Quick Start
 
 1. **Process CPE data files (if available)**:
    ```bash
@@ -166,7 +166,7 @@ All hyperparameters and settings are centralized in `simulation/config.py`:
 - **LMB Filter Parameters**: Birth probability, existence thresholds
 - **GNN & RL Parameters**: Learning rate, network architecture, training settings
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
 ### 1. Environment Layer
 - **ConstellationEnv**: Main RL environment managing the simulation loop
@@ -246,7 +246,7 @@ def _calculate_reward(self, ground_truth, estimated_state):
 4. **Use GPU**: Enable CUDA for significantly faster training
 5. **Save Checkpoints**: Regular model saving prevents loss of progress
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -263,14 +263,14 @@ DEBUG = True
 VERBOSE = True
 ```
 
-## 📚 References
+## References
 
 - **LMB Filter**: Vo, B.-N., & Ma, W.-K. (2006). The Gaussian mixture probability hypothesis density filter.
 - **OSPA Metric**: Schuhmacher, D., Vo, B.-T., & Vo, B.-N. (2008). A consistent metric for performance evaluation of multi-object filters.
 - **PPO**: Schulman, J., et al. (2017). Proximal policy optimization algorithms.
 - **Graph Attention Networks**: Veličković, P., et al. (2018). Graph attention networks.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -278,11 +278,11 @@ VERBOSE = True
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - PyTorch Geometric team for the excellent GNN library
 - OpenAI Gym for the RL environment framework
